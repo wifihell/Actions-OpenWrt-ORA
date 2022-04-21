@@ -19,8 +19,7 @@ on:
       - main
     paths:
       - '.config'
-  schedule:
-    - cron: 0 0 20 * *
+
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
@@ -33,7 +32,7 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: false
+  UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
 jobs:
